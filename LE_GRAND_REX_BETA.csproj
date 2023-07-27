@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2119A57C-1FA4-4DD2-BFAC-89DDE20DCCF8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LE_GRAND_REX_BETA</RootNamespace>
+    <AssemblyName>LE_GRAND_REX_BETA</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes.cs" />
+    <Compile Include="error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="error.Designer.cs">
+      <DependentUpon>error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_10.Designer.cs">
+      <DependentUpon>movie_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_7.Designer.cs">
+      <DependentUpon>movie_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_2.Designer.cs">
+      <DependentUpon>movie_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movies.Designer.cs">
+      <DependentUpon>movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_1.Designer.cs">
+      <DependentUpon>movie_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_3.Designer.cs">
+      <DependentUpon>movie_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_4.Designer.cs">
+      <DependentUpon>movie_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_5.Designer.cs">
+      <DependentUpon>movie_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_6.Designer.cs">
+      <DependentUpon>movie_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_8.Designer.cs">
+      <DependentUpon>movie_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movie_9.Designer.cs">
+      <DependentUpon>movie_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="recipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recipt.Designer.cs">
+      <DependentUpon>recipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="snacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="snacks.Designer.cs">
+      <DependentUpon>snacks.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="error.resx">
+      <DependentUpon>error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_10.resx">
+      <DependentUpon>movie_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_7.resx">
+      <DependentUpon>movie_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_2.resx">
+      <DependentUpon>movie_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movies.resx">
+      <DependentUpon>movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_1.resx">
+      <DependentUpon>movie_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_3.resx">
+      <DependentUpon>movie_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_4.resx">
+      <DependentUpon>movie_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_5.resx">
+      <DependentUpon>movie_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_6.resx">
+      <DependentUpon>movie_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_8.resx">
+      <DependentUpon>movie_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_9.resx">
+      <DependentUpon>movie_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recipt.resx">
+      <DependentUpon>recipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="snacks.resx">
+      <DependentUpon>snacks.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Coding_re_iv62 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_24_1px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\245a44e4d9da3687f77e6202bd6d2995.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14461508_max.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\philosophers-stone-20-years-of-movie-magic-ron-poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9b885669438668d7d8bd76128120d90c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9b885669438668d7d8bd76128120d90c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\OIP.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\R.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\oppenheimer-poster-1658411601593.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\Barbie_2023_poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\th.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pics\OIP %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DUNE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8__1__1659022717.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15+__1__1659022728 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16+__1__1659022671 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21__1__1659022873.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\om-ali_1659022890.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9__1__1659022859.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilepicturev2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\164-1648960_speech-bubble-clip-art-download-3d-vector-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\164-1648960_speech-bubble-clip-art-download-3d-vector-cloud1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\164-1648960_speech-bubble-clip-art-download-3d-vector-cloud2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
